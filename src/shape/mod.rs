@@ -24,6 +24,7 @@ pub use self::shared_shape::SharedShape;
 #[doc(inline)]
 pub use self::support_map::SupportMap;
 pub use self::triangle::{Triangle, TriangleOrientation, TrianglePointLocation};
+pub use self::voxels::{OctantPattern, VoxelData, VoxelType, Voxels};
 
 #[cfg(feature = "dim2")]
 #[cfg(feature = "std")]
@@ -115,3 +116,4 @@ mod feature_id;
 mod polygonal_feature2d;
 #[cfg(feature = "std")]
 mod shared_shape;
+mod voxels;
